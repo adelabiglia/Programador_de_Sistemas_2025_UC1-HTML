@@ -1,0 +1,15 @@
+------ Página inicial
+- Deve conter 3 imagens
+- Os botões devem abrir um link do livro
+- Os links no final da página não precisam funcionar
+
+------ Contato
+- O link deve abrir o WhatsApp
+- Adicionar imagens como ícones (não usar os emotes do Windows)
+
+------ Entrar
+- Os campos devem ser validados
+
+------ Cadastrar
+- Os campos devem ser validados
+- Ao enviar o formulário, redirecionar para a página de confirmação de cadastro
