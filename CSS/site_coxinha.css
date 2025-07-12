@@ -1,0 +1,69 @@
+/* 
+    Paleta de Cores:
+    Azul Principal: #2196F3
+    Azul Escuro: #1976D2
+    AZul Claro: #BBDEFB
+    Rosa: #FF4081
+    Branco: #FFF
+*/ 
+
+body{
+    margin: 0;
+}
+
+h1{
+    color:#fff;
+    text-align: center;
+}
+
+.enfase{
+    color: #BBDEFB;
+}
+
+.classe{
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cabecalho{
+    background-color: #1976D2;
+    padding: 45px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bbdefb;
+    font-size: 15px;
+        
+}
+
+.botaoPrincipal{
+    background-color: red;
+    color: #fff;
+    border:  none; /* Remove a borda do botão  */
+    font-size: 15px;
+    padding: 20px; /* Aumenta o espaço POR DENTRO do item */
+    border-radius: 8.2px; /* Arredondar as bordar | use 50% para por no máximo | pode usar 8.5, 3.4 */
+    cursor: pointer; /* muda a imagem do ponteiro do mouse */ 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px; /* aumenta o espaco POR FORA do Item */
+    margin-right: 45px; 
+}
+
+
+.botaoInvertido{
+    background-color:transparent;
+    color:#ff4081;
+    border: 3.5px dotted #ff4081;  /* Remove a borda do botão  */
+    font-size: 15px;
+    padding: 20px; /* Aumenta o espaço POR DENTRO do item */
+    border-radius: 8.2px; /* Arredondar as bordar | use 50% para por no máximo | pode usar 8.5, 3.4 */
+    cursor: pointer; /* muda a imagem do ponteiro do mouse */ 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px; /* aumenta o espaco POR FORA do Item */
+    margin-right: 45px; 
+        
+}
+
+.container{
+    margin-left: 100px;
+}
