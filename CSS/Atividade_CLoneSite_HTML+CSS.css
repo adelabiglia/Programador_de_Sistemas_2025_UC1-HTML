@@ -35,12 +35,11 @@ body{
 .menuTop{
     background-image: url(./vintage-chair-barbershop.jpg);
     background-size: cover;
-    ba
     margin: 0;
     padding: 100px;
-    color:white;
+    color:blanchedalmond;
     font-weight: bolder;
-    text-shadow: 6px 6px 8px black;
+    text-shadow: 6px 6px 8px rgb(173, 118, 86);
 }
 .menuTop button{
     background-color: black;
@@ -51,10 +50,15 @@ body{
     padding: 10px 30px;
     cursor: pointer;
 }
+.menuTop button:hover{
+    background-color: #7c6b0d;
+    transition: 0.3s;
+}
 .barbeiros{
     border: 2px solid;
     padding: 60px;
     margin: 0;
+    text-align: center;
 }
 .barbeiros img{
     width: 200px;
@@ -72,6 +76,7 @@ body{
 }
 .desconto{
     background-image: url(./barber-customer-giving-high-five.jpg);
+    background-size: cover;
     padding: 100px;
     color: aqua;
     font-weight: bolder;
@@ -85,6 +90,10 @@ body{
     border-radius: 5.2px;
     padding: 10px 10px;
     cursor: pointer;
+}
+.desconto button:hover{
+    background-color: green;
+    transition: 0.3s;
 }
 .pisca {
     animation: pisca-texto 1s infinite;
