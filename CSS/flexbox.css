@@ -1,0 +1,20 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.menu{
+    display: flex; /* ele manda no direcionamento dos elementos */ 
+    flex-direction: row; /* direção do flex */
+    justify-content: space-around; /* ajusta o espaçamento do conteudo */ 
+    align-items: center;
+}
+.itensMenu{
+    display: flex; /* ele manda no direcionamento dos elementos */ 
+    gap: 30px; /* distãncia entre os itens */
+}
+.configuracaoMenu{
+    display: flex;  /* ele manda no direcionamento dos elementos */ 
+    flex-direction: row; /* direção do flex */
+    justify-content: space-between; /* ajusta o espaçamento do conteudo */ 
+    align-items: center;
+}

@@ -1,0 +1,103 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Manufacturing Consent", system-ui;
+    margin: 0;
+}
+.menuPrincipal{
+    background-color: rgb(185, 165, 114);
+    padding: 30px;
+}
+.menuPrincipal a:hover span{
+    display: inline;
+}
+.linksMenu a span{
+    display: none;
+}
+.linksMenu a{
+    color: #656565;
+    text-decoration: none; /* remove o traçado padrão do link */
+    margin-right: 25px;
+    font-size: 15px;
+}
+.linksMenu{
+    margin-top: 10px;
+}
+.linksMenu a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    color: black;
+}
+.menuTop{
+    background-image: url(./vintage-chair-barbershop.jpg);
+    background-size: cover;
+    ba
+    margin: 0;
+    padding: 100px;
+    color:white;
+    font-weight: bolder;
+    text-shadow: 6px 6px 8px black;
+}
+.menuTop button{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5.2px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.barbeiros{
+    border: 2px solid;
+    padding: 60px;
+    margin: 0;
+}
+.barbeiros img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+}
+.barbeirosFlex{
+    display: flex;
+    flex-direction: row; /* direção do flex */
+    justify-content: space-around; /* ajusta o espaçamento do conteudo */ 
+    align-items: center;
+}
+.conhecaOsBarbeiros{
+    text-align: center;
+}
+.desconto{
+    background-image: url(./barber-customer-giving-high-five.jpg);
+    padding: 100px;
+    color: aqua;
+    font-weight: bolder;
+    text-align: left;
+}
+.desconto button{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5.2px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.pisca {
+    animation: pisca-texto 1s infinite;
+  }
+  
+  @keyframes pisca-texto {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

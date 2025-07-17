@@ -1,0 +1,81 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333333;
+    margin: 0
+}
+.menuFlex{
+    display: flex; /* ele manda no direcionamento dos elementos */ 
+    flex-direction: row; /* direção do flex */
+    justify-content: space-between; /* ajusta o espaçamento do conteudo */ 
+    align-items: start;
+}
+
+.linksMenu a{
+    color: #656565;
+    text-decoration: none; /* remove o traçado padrão do link */
+    margin-right: 25px;
+    font-size: 15px;
+}
+.linksMenu{
+    margin-top: 10px;
+}
+.linksMenu a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    color: black;
+}
+.abertura{
+    background: #108ab3;
+    background: linear-gradient(77deg,rgba(16, 138, 179, 1) 0%, rgba(93, 245, 214, 1) 4%, rgba(0, 212, 255, 1) 51%);
+    padding: 120px 80px;
+    margin-top: 15px;
+}
+.abertura p{
+    width: 300px; 
+    font-size: 15px;   
+}
+.abertura h2{
+    font-size: 25px;
+}
+.botaoPrincipal{
+    color: white;
+    background-color: #0867b8;
+    font-weight: bold;
+    border: none;
+    border-radius: 5.2px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.botaoPrincipal:hover{ 
+    background-color: #075da6;
+    transition: 0.3s; /* animação suave quando passar o mouse */
+} 
+.cardProduto{
+    background:0;
+    width: 250px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px #eee; /* sombra */
+    margin-left: 20px;
+}
+.cardProduto img{
+    width: 100%; /* Ajusta a imagem para o tamanho do pai */
+}
+.cardConteudo{
+    padding: 20px;
+}
+.cardConteudo button{
+    width: 100%;
+}
+.cardTitulo{
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+}
+.flex{
+    display: flex;
+    flex-direction: row; /* direção do flex */
+    justify-content: space-around; /* ajusta o espaçamento do conteudo */ 
+    align-items: center;
+}

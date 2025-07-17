@@ -67,3 +67,11 @@ h1{
 .container{
     margin-left: 100px;
 }
+
+.botoesFlex{
+    display: flex; /* ele manda no direcionamento dos elementos */ 
+    flex-direction: row; /* direção do flex */
+    justify-content: space-around; /* ajusta o espaçamento do conteudo */ 
+    align-items: center;
+    
+}
