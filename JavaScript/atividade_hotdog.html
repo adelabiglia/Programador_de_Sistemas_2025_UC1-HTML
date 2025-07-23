@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do Hotdog</title>
+</head>
+<body>
+    
+    <script>
+
+        alert("Bem Vindos ao Hotdog Podrão")
+
+        let salsicha = prompt("Digite o Valor da Salsicha: R$")
+        salsicha = parseFloat(salsicha)
+
+        let pure = prompt("Digite o Valor do Purê de Batatas: R$")
+        pure = parseFloat(pure)
+
+        let salada = prompt("Digite o Valor da Salada: R$")
+        salada = parseFloat(salada)
+
+        let pao = 1.15
+        let palha = 0.95
+
+        let dog_simples = pao + palha + salsicha + pure
+        let dog_duplo = pao + palha + salsicha + salsicha + pure + salada
+        let dog_especial = pao + palha + salsicha + salsicha + salsicha + (pure * 2) + salada // multiplicação com adiçao e divisão usar parenteses para respeitar a operação matemática
+
+        alert("Cardápios: \nDog Simples: R$ " + dog_simples + "\nDog Duplo: R$ " + dog_duplo + "\nDog Especial: R$ " + dog_especial)
+
+
+    </script>
+
+
+
+
+</body>
+</html>

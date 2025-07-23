@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+
+    <script>
+        // Revisão da aula 01: VARIÁVEIS
+        
+        // Mostra a mensagem no console do navegador
+        console.log("Revisão do JavaScript")
+        
+        // O alert cria uma mensagem na tela e trava o Navegador
+        alert("Sucesso!!! \n\n Seu Cadastro foi Realizado com Sucesso!!!") // \n pula uma linha = <br> no html
+
+        let tomate = prompt("Digite o Preço do Tomate:")
+        tomate = parseFloat(tomate) // parseInt transforma em numero inteiro
+        let hamburger = parseFloat( prompt("Digite o Preço do Hamburger:"))  // pode ser feito tudo numa linha parseFloat e prompt
+        
+        let queijo = prompt("Digite o Preço do Queijo:")
+        queijo = parseFloat(queijo) // parseFloat em numeros decimais
+
+        alert ("Cardápio: \nTomate: R$ "+ tomate + "\nHamburger: R$ " + hamburger + "\nQueijo: R$ " + queijo)
+
+        let preco_custo = tomate + hamburger + queijo
+        alert("Preço de Custo: R$ " +preco_custo)
+
+        let margem_lucro = 42.5 // isso é porcentagem
+        let preco_venda = margem_lucro * preco_custo / 100 + preco_custo
+
+        alert("O preço final do produto será R$ " + preco_venda.toFixed(2)) // .toFixed determina quantas casas decimais
+
+    </script>
+
+
+
+
+</body>
+</html>

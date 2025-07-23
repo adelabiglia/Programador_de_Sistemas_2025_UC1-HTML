@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Inputs</title>
+</head>
+<body>
+    <h1>Atividade de Inputs</h1>
+    <p>Você deve criar um sistema de estoque com as seguintes especificações:</p>
+    <li>
+        O sistema deve cadastrar o nome de dois produtos novos
+        O sistema deve perguntar quantos produtos ha em estoque de cada um deles
+        no final, o sistema deve exibir os produtos e sua quantidade
+    </li>
+
+    <script>
+       
+        console.log("Atividade de Inputs")
+        
+        alert("Cadastre aqui os Produtos")
+
+        let produto1 = prompt("Digite o nome do Produto 1:")
+        let produto2 = prompt("Digite o Nome do Produto 2:")
+        
+        let quantidade_produto1 = prompt("Digite a quantidade do " + produto1)
+        let quantidade_produto2 = prompt("Digite a quantidade do " + produto2) 
+        
+        alert("Produtos Cadastrados com Sucesso!") 
+
+        let total_produto1 = produto1 + " = " + quantidade_produto1
+        let total_produto2 = produto2 + " = " + quantidade_produto2
+
+        alert("Total de Produtos: \n " +  total_produto1 + "\n " + total_produto2)
+
+
+
+    </script>
+
+
+
+</body>
+</html>
