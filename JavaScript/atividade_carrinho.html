@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Carrinho</title>
+</head>
+<body>
+    
+    <h1>Market Déd's</h1>
+    <hr/>
+    <p> <strong>Arroz - R$ 15,90</strong></p>
+    <button onclick="adicionarArroz()" >Adicionar</button>
+    <button onclick="removerArroz()" >Remover</button>
+    <hr/>
+    <p> <strong>Feijão - R$ 11,40</strong> </p>
+    <button onclick="adicionarFeijao()" >Adicionar</button>
+    <button onclick="removerFeijao()" >Remover</button>
+    <hr/>
+    <h2>Seu Carrinho</h2>
+    <button onclick="verCarrinho()" >Ver Carrinho</button>
+    <button onclick="limparCarrinho()" >Limpar Carrinho</button>
+
+    <script>
+
+        let carrinho = 0
+        let arroz = 0
+        let feijao = 0
+        let precoArroz = 0
+        let precoFeijao = 0
+       
+        function adicionarArroz(){
+            carrinho = carrinho + 1
+            arroz = arroz + 1
+            precoArroz = 15.90 * arroz
+        }
+        function removerArroz(){
+            carrinho = carrinho - 1
+            arroz = arroz - 1
+            precoArroz = 15.90 * arroz
+        }
+        function adicionarFeijao(){
+            carrinho = carrinho + 1
+            feijao = feijao + 1
+            precoFeijao = 11.40 * feijao
+        }
+        function removerFeijao(){
+            carrinho = carrinho - 1
+            feijao = feijao - 1
+            precoFeijao = 11.40 * feijao
+        }
+                function verCarrinho(){
+            let totalcarrinho = precoArroz + precoFeijao
+            alert("Itens no carrinho: " + carrinho +"\n\nQtde Arroz: " +arroz +
+            " |  Total Arroz: R$ "+ precoArroz.toFixed(2) +"\nQtde Feijão: " + feijao +
+            " |  Total Feijão: R$ "+ precoFeijao.toFixed(2) +"\n\n\n Total da Compra: R$ " + totalcarrinho.toFixed(2))
+           
+        }
+        function limparCarrinho(){
+            carrinho = 0
+            arroz = 0
+            feijao = 0
+
+            precoArroz = 0
+            precoFeijao = 0
+        }
+        
+
+
+    </script>
+
+
+
+
+</body>
+</html>

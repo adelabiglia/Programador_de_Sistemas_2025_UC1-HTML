@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+</head>
+<body>
+    <div id="inicio" >
+        <h1>Cadastro</h1>
+    
+        <button onclick="mostrarUsuario()">Cadastro de Usuário</button>
+        <br/><br/>
+        <button onclick="mostrarEmpresa()">Cadastro de Empresa</button>
+    </div>
+
+    <div id="usuario" >
+        <h2>Usuários</h2>
+        <p>Este é o cadastro de usuários</p>
+        <button onclick="mostrarInicio()" >Voltar</button>
+    </div>
+
+    <div id="empresa" >
+        <h2>Empresa</h2>
+        <p>Este é o cadastro de uma Empresa</p>
+        <button onclick="mostrarInicio()" >Voltar</button>
+    </div>
+
+    <script>
+        // utiliza a css para mudar estilo no javascript
+        esconderTodos()
+        mostrarInicio()
+
+        function esconderTodos(){
+            document.querySelector("#usuario").style.display = "none" 
+            document.querySelector("#empresa").style.display = "none"
+            document.querySelector("#inicio").style.display = "none"
+        }
+        function mostrarInicio(){
+            esconderTodos()
+            document.querySelector("#inicio").style.display = "block" 
+        }
+        function mostrarUsuario(){
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block" 
+        }
+        function mostrarEmpresa(){
+            esconderTodos()
+            document.querySelector("#empresa").style.display = "block" 
+        }
+
+    </script>
+
+
+</body>
+</html>

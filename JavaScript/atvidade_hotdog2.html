@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do Hotdog2</title>
+</head>
+<body>
+    
+    <p>Digite o valor da Salsicha:</p>
+    <input id="inputSalsicha" />
+
+    <p>Digite o Valor do Purê de Batata:</p>
+    <input id="inputPure" />
+
+    <p>Digite o Valor da Salada:</p>
+    <input id="inputSalada" />
+
+    <br/><br/><br/>
+    <button onclick="atualizarCardapio()" >Atualizar Cardápio</button>
+    <hr/>
+
+    <h2>Cardápio</h2>
+
+    <ul>
+        <li>Dog Simples: R$ <span id="simples" >...</span></li>
+        <li>Dog Duplo: R$ <span id="duplo" >...</span></li>
+        <li> Dog Especial: R$ <span id="especial" >...</span></li>
+    </ul>
+          
+    <script>
+
+        const pao = 1.15
+        const palha = 0.95
+        let salsicha, pure, salada
+        let dog_simples, dog_duplo, dog_especial
+               
+        function atualizarCardapio(){
+            // pega os valores           
+            salsicha = parseFloat (document.querySelector("#inputSalsicha").value)
+            pure = parseFloat (document.querySelector("#inputPure").value)
+            salada = parseFloat (document.querySelector("#inputSalada").value)
+            // faz a operação matemática
+            dog_simples = pao + palha + salsicha + pure
+            dog_duplo = pao + palha + salsicha + salsicha + pure + salada
+            dog_especial = pao + palha + salsicha + salsicha + salsicha + (pure * 2) + salada
+            // devolve a informação no id especificado
+            document.querySelector("#simples").innerHTML = dog_simples.toFixed(2)
+            document.querySelector("#duplo").innerHTML = dog_duplo.toFixed(2)
+            document.querySelector("#especial").innerHTML = dog_especial.toFixed(2)           
+        }
+                      
+    </script>
+
+
+</body>
+</html>
