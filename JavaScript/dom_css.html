@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM CSS</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+  /> <!--link da animação-->
+
 </head>
 <body>
-    <div id="inicio" >
-        <h1>Cadastro</h1>
+    
+    <div id="inicio" class="animate__animated animate__swing animate__slower"> <!-- animação via site animate.style | animação, tipo e velocidade (engraçado animate__infinite)-->
+        <h1>Cadastro</h1>  
     
         <button onclick="mostrarUsuario()">Cadastro de Usuário</button>
         <br/><br/>
@@ -28,7 +35,6 @@
 
     <script>
         // utiliza a css para mudar estilo no javascript
-        esconderTodos()
         mostrarInicio()
 
         function esconderTodos(){
