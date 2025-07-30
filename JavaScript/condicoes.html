@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    
+    <h1>Condições</h1>
+    <p>Como fazer condições simples em HTML</p>
+    
+    <input id="inputIdade" placeholder="Digite sua idade:" />
+    <button onclick="salvarIdade()" >Salvar</button>
+    
+    <br/>
+    
+    <input id="inputSenha" placeholder="Digite sua senha:" />
+    <button onclick="salvarSenha()" >Salvar</button>
+    
+    <br/>
+    
+    <div id="divTermos" style="display: none">
+        <input id="inputTermos" type="checkbox" /> Eu concordo com os termos de uso
+        <br/>
+        <p>Status: <span id="textoStatus">...</span></p>
+        <button onclick="salvarTermos()" >Salvar</button>
+    </div>
+    
+    <!--linkar com o condições js -->
+    <script src="./condicoes.js"></script>
+    
+</body>
+</html>

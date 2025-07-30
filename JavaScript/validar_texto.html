@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Manipular Textos</h1>
+    <p>Identificar e alterar textos (strings) em javascript</p>
+
+    <input placeholder="Digito o nome" />
+    <br/><br/>
+    <input placeholder="Digito a idade" />
+    <br/><br/>
+    <input placeholder="Digito o CPF" />
+    <br/><br/>
+    <input placeholder="Digito o email" />
+    <br/><br/>
+    <button onclick="validarDados()" >Salvar</button>
+    
+
+
+
+    <script>
+
+        function validarDados(){
+            let nome = document.querySelectorAll("input")[0].value // SelectorAll pega o input da lista começando por 0 (zero)
+            let idade = parseInt(document.querySelectorAll("input")[1].value)
+            let cpf = document.querySelectorAll("input")[2].value
+            let email = document.querySelectorAll("input")[3].value
+            
+            // length - conta quantos caracteres tem na variavel
+            if(nome.length <= 3){
+                alert("O nome digitado é muito curto...")
+                return
+            }
+            // Valida se não é numero
+            if(isNaN(idade) == true ){
+                alert("Digite uma idade válida...")
+                return
+            }
+            if(idade > 120){
+                alert("Idade Invalida, deve ser menor que 120")
+                return
+            }
+            // != Sinal de diferente
+            if(cpf.length != 11){
+                alert("CPF Inválido")
+                return
+            }
+            if(email.includes("@") == false){
+                alert("Email Inválido")
+                return
+            }
+            if(email.includes(".") == false){
+                alert("Email Inválido")
+                return
+            }
+            
+            
+
+            
+            alert("Cadastro Realizado com Sucesso!")
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
