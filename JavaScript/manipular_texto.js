@@ -77,8 +77,8 @@ function hospedagem(){
     }
 
     let quarto = 150
-    let adulto = 85
-    let crianca = adulto/2
+    let adulto = 0
+    let crianca = 0 
     let qtdAdulto = parseInt(prompt("Qual a quantidade de Adultos:"))
     if(qtdAdulto > 0){
         alert("Insira a Quantidade de Crianças:")
@@ -88,28 +88,24 @@ function hospedagem(){
     }
     let qtdCrianca = parseInt(prompt("Qual a quantidade de Crianças:"))
 
-    let desconto = prompt("Você possui um cupom de desconto?")
-    if(desconto == "MENOS10"){
+    let cupom = prompt("Você possui um cupom de desconto?")
+    if(cupom == "MENOS10"){
         alert("Parabéns você ganhou 10% de Desconto!!!")
+        let desconto = 0.10
     }else{
-        alert("Cupom Invalido!")
+        alert("Cupom Invalido!") 
     }
-    console.log cupom()
-    function cupom(){
-        let precoAdulto = qtdAdulto * adulto
-        let precoCrianca qtdCrianca * crianca
+    let precoAdulto = qtdAdulto * 85
+    let precoCrianca = qtdCrianca * 42.50
+    let total = quarto + precoAdulto + precoCrianca
+    // não aplicado o desconto de 10%
     
-        (("---CONRADITO RESIDANCE---"
-            \n\n "Mês de Hospedagem: "+mesHospedagem
-             " +arroz +
-            " |  Total Arroz: R$ "+ precoArroz.toFixed(2) +"\nQtde Feijão: " + feijao +
-            " |  Total Feijão: R$ "+ precoFeijao.toFixed(2) +"\n\n\n Total da Compra: R$ " + totalcarrinho.toFixed(2)))
-    }
-
-
-
-    
-
-
-
+    console.log("--------------------------------------")
+    console.log("---------CONRADITO RESIDANCE----------")
+    console.log("Mês de Hospedagem: " +mesHospedagem)
+    console.log("--------------------------------------")
+    console.log("Preço Base do Quarto: "+quarto+",00" )
+    console.log("Adultos: "+qtdAdulto+" x R$85,00")
+    console.log("Crianças: "+qtdCrianca+ " x R$42,50")
+    console.log("Total: "+total.toFixed(2))
 }
